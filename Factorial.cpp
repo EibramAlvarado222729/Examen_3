@@ -32,21 +32,21 @@ int main() {
     int saldo = 20000;  
 
     do {
-        cout << "\n===== Menú Principal =====" << endl;
+        cout << "\n===== Menu Principal =====" << endl;
         cout << "1. Calcular Factorial" << endl;
-        cout << "2. Usar Cajero Automático" << endl;
+        cout << "2. Usar Cajero Automatico" << endl;
         cout << "3. Salir" << endl;
-        cout << "Elige una opción: ";
+        cout << "Elige una opcion: ";
         cin >> opcion;
 
         switch (opcion) {
             case 1: {
                 int numero;
-                cout << "Ingresa un número para calcular su factorial: ";
+                cout << "Ingresa un numero para calcular su factorial: ";
                 cin >> numero;
 
                 if (numero < 0) {
-                    cout << "El factorial no está definido para números negativos." << endl;
+                    cout << "El factorial no está definido para numeros negativos." << endl;
                 } else {
                     cout << "El factorial de " << numero << " es: " << factorial(numero) << endl;
                 }
@@ -55,11 +55,11 @@ int main() {
             case 2: {
                 int opcionCajero;
                 do {
-                    cout << "\n===== Cajero Automático =====" << endl;
+                    cout << "\n===== Cajero Automatico =====" << endl;
                     cout << "1. Consultar saldo" << endl;
                     cout << "2. Retirar efectivo" << endl;
                     cout << "3. Salir del Cajero" << endl;
-                    cout << "Elige una opción: ";
+                    cout << "Elige una opcion: ";
                     cin >> opcionCajero;
 
                     switch (opcionCajero) {
@@ -70,10 +70,10 @@ int main() {
                             saldo = retirarEfectivo(saldo);
                             break;
                         case 3:
-                            cout << "Saliendo del cajero automático." << endl;
+                            cout << "Saliendo del cajero automatico." << endl;
                             break;
                         default:
-                            cout << "Opción inválida. Inténtalo de nuevo." << endl;
+                            cout << "Opcion invalida. Intentalo de nuevo." << endl;
                     }
                 } while (opcionCajero != 3);
                 break;
@@ -82,7 +82,7 @@ int main() {
                 cout << "Saliendo del programa." << endl;
                 break;
             default:
-                cout << "Opción inválida. Inténtalo de nuevo." << endl;
+                cout << "Opcion invalida. Intentalo de nuevo." << endl;
         }
     } while (opcion != 3);
 
